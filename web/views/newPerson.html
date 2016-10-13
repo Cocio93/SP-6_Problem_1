@@ -1,0 +1,19 @@
+<div>
+    Add a new Person to the archive of the incredibly insane
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input ng-model="name" type="text" class="form-control">
+            <br>
+            <label for="age">Age:</label>
+            <input ng-model="age" type="number" class="form-control" >
+            <button ng-click='addPerson(name, age)'>Add Person</button>
+        </div>
+    </form>
+    
+        <label ng-repeat="p in persons">
+        Name: {{p.name}} Age: {{p.age}}
+        <br>
+        
+    </label>
+</div>
